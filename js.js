@@ -9,13 +9,15 @@ list.addEventListener('click',function(e){
 
 /*create element*/
 const del=document.forms['add'];
+var inp=document.getElementById("summa");
 del.addEventListener('submit',function(e){
     e.preventDefault();
     const val=del.querySelector('input[type="text"]').value;
     if(val==""){
-        alert("Enter a valid item");
-    }
+        inp.style.border="2px solid red";
+        }
     else{
+        inp.style.border="none";
     const li=document.createElement('li');
     const new_ele=document.createElement('span');
     const del_btn=document.createElement("span");
@@ -27,6 +29,6 @@ del.addEventListener('submit',function(e){
      li.appendChild(new_ele);
      li.appendChild(del_btn);
      list.appendChild(li);
-     document.getElementById("summa").value="";
+     inp.value="";
     }
 });

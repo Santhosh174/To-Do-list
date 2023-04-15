@@ -2,17 +2,29 @@
     border: 50px;
 }
 body{
-    background-color: rgb(73, 213, 255);
+    background-image: url("./img/bg.jpg");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
 }
 .main{
     justify-content: center;
     text-align: center;
-    background-color: rgba(203, 255, 219, 0.801);
+    background-image: url("./img/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 30%;
     margin-top: 7%;
     padding: 30px;
     width: 500px;
-    border: 5px solid rgb(8, 8, 8);
+    border-radius: 15px;
+}
+.main h1{
+    color: rgb(73, 0, 95);
+    font-weight: bold;
 }
 #item ul{
     list-style-type:none ;
@@ -25,7 +37,7 @@ body{
     border-radius: 5px;
 }
 #item li:hover{
-    border-left:5px solid rgb(255, 0, 0) ;
+    border-left:5px solid rgb(79, 0, 116) ;
 }
 .delete{
     float: right;
@@ -33,14 +45,14 @@ body{
     border: 5px;
     border: 2px solid white;
     border-radius: 5px;
-    background-color: rgb(255, 8, 0);
+    background-color: rgb(79, 0, 116);
     margin-top: -2%;
     padding: 7px;
     cursor: pointer;
 }
 .delete:hover{
-    color: rgb(255, 8, 0);
-    border: 2px solid rgb(255, 8, 0);
+    color: rgb(79, 0, 116);
+    border: 2px solid rgb(79, 0, 116);
     background-color: white;
     padding: 7px;
 }
@@ -56,16 +68,21 @@ body{
 #add button{
     float: right;
     margin-right: 30px;
-    background-color: rgb(4, 255, 17);
+    background-color: rgb(255, 0, 119);
     padding: 8px;
     width: 50px;
-    border: 2px solid black;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 #add button:hover{
-    background-color: black;
-    color: rgb(30, 255, 0);
-    border: 2px solid rgb(30, 255, 0);
+    background-color: rgb(255, 59, 212);
+  
+}
+@media only screen and (max-width: 600px){
+    .main{
+        background-image: url("./img/main.jpg");
+
+    }
+
 }
