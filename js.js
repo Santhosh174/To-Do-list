@@ -15,6 +15,7 @@ del.addEventListener('submit',function(e){
     const val=del.querySelector('input[type="text"]').value;
     if(val==""){
         inp.style.border="2px solid red";
+        inp.placeholder="Enter a valid item";       
         }
     else{
         inp.style.border="none";
